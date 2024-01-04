@@ -17,10 +17,11 @@ public class Main {
             if (!cat.isSatiety()) {
                 cat.eat(plate.getFood());
                 plate.setFood(countFood(cat.getAppetite(), plate.getFood()));
-                System.out.printf("Оставшаяся порция в тарелке %d\n", plate.getFood());
+                plate.info();
                 if (plate.getFood() <= 10) {
                     plate.setFood(20);
-                    System.out.printf("В тарелку добавили еды. Оставшаяся порция в тарелке %d\n", plate.getFood());
+                    System.out.println("В тарелку добавили еды.");
+                    plate.info();
                 }
             }
         }
