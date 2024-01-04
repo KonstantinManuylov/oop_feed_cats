@@ -9,7 +9,7 @@ public class Main {
                 new Cat("Jester", 15),
                 new Cat("Frosiya", 10),
                 new Cat("Purrka", 20),
-                new Cat("Puztik", 50)
+                new Cat("Puzatik", 50)
         };
         Plate plate = new Plate(20);
 
